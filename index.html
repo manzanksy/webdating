@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JodohinAja✨</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- INTRO -->
+    <div id="intro" class="screen active">
+      <div class="hearts-deco">💘</div>
+      <div class="logo">Jodohin<span>Aja</span></div>
+      <div class="tagline">Takdir tidak bisa dilawan</div>
+
+      <div class="input-wrap">
+        <label class="input-label" for="nameInput">Siapa namamu?</label>
+        <input
+          class="name-input"
+          id="nameInput"
+          type="text"
+          placeholder="Masukan namamu..."
+          autocomplete="off"
+        />
+      </div>
+
+      <button class="btn-start" onclick="startApp()">
+        Mulai Perjalanan Cinta ✨
+      </button>
+    </div>
+
+    <!-- SWIPE -->
+    <div id="swipe" class="screen">
+      <div class="swipe-header">
+        <div class="greeting" id="greetText">Halo!</div>
+        <div style="font-size: 13px; color: #9b7fa6; margin-top: 4px">
+          Temukan jodohmu di antara mereka
+        </div>
+        <div class="progress-dots" id="dots"></div>
+      </div>
+
+      <div class="card-area" id="cardArea">
+        <div class="tooltip-warning" id="tooltip"></div>
+      </div>
+
+      <div class="swipe-hints">
+        <div class="hint hint-left">
+          <div class="hint-icon">👎</div>
+          <span>Geser Kiri</span>
+        </div>
+        <div class="hint hint-right">
+          <span>Geser Kanan</span>
+          <div class="hint-icon">💜</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MATCH -->
+    <div id="match" class="screen">
+      <div class="confetti-wrap" id="confetti"></div>
+
+      <div class="match-title">
+        It's a<br /><span class="accent">Match!</span> 💘
+      </div>
+      <div class="match-sub">Takdir telah berbicara</div>
+
+      <div class="match-card" id="matchCard">
+        <div class="card-avatar" id="matchAvatar"></div>
+        <div class="card-info">
+          <div class="card-name" id="matchNameCard"></div>
+          <div class="card-age" id="matchAgeCard"></div>
+        </div>
+      </div>
+
+      <div class="match-name" id="matchName"></div>
+      <div class="match-desc" id="matchDesc"></div>
+
+      <a class="btn-wa" id="waBtn" href="#" target="_blank">
+        <span class="wa-icon">💬</span>
+        <span>Chat di WhatsApp</span>
+      </a>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
